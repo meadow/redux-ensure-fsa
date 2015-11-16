@@ -22,13 +22,13 @@ console.log('Next Version: ' + nextVersion);
 
 packageJson.version = nextVersion;
 
-fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2), 'utf8');
+fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2) + '\n', 'utf8');
 
-execSync('npm run build');
+execSync('npm run build', { stdio: [0, 1, 2] });
 
 execSync(`git commit -am 'Release Version: ${nextRef}'`);
 execSync(`git tag ${nextRef}`);
 execSync(`git push origin master`);
 execSync(`git push origin ${nextRef}`);
 
-execSync('npm publish');
+execSync('npm publish', { stdio: [0, 1, 2] });
