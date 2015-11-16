@@ -1,16 +1,16 @@
 # Redux Ensure Flux Standard Action Middleware
 
-`redux-ensure-fsa-middleware` provides a middleware function to use as part of the `redux` dispatch chain. It is intended for use in development only to check that all actions at the end of the chain follow the [Flux Standard Action](https://github.com/acdlite/flux-standard-action) protocol.
+`redux-ensure-fsa` provides a middleware function to use as part of the `redux` dispatch chain. It is intended for use in development only to check that all actions at the end of the chain follow the [Flux Standard Action](https://github.com/acdlite/flux-standard-action) protocol.
 
 ## Installation
 
-`npm install @meadow/redux-ensure-fsa-middleware`
+`npm install @meadow/redux-ensure-fsa`
 
 ## Usage
 
 ```javascript
 import { createStore, applyMiddleware } from 'redux';
-import ensureFSAMiddleware from '@meadow/redux-ensure-fsa-middleware';
+import ensureFSAMiddleware from '@meadow/redux-ensure-fsa';
 import thunkMiddleware from 'redux-thunk';
 
 let middleware = [thunkMiddleware];

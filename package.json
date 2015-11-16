@@ -1,5 +1,5 @@
 {
-  "name": "@meadow/redux-ensure-fsa-middleware",
+  "name": "@meadow/redux-ensure-fsa",
   "version": "1.0.3",
   "description": "Redux middleware to check for flux standard actions",
   "main": "build/middleware.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/meadow/redux-ensure-fsa-middleware.git"
+    "url": "https://github.com/meadow/redux-ensure-fsa.git"
   },
   "keywords": [
     "redux",
@@ -25,9 +25,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/meadow/redux-ensure-fsa-middleware/issues"
+    "url": "https://github.com/meadow/redux-ensure-fsa/issues"
   },
-  "homepage": "https://github.com/meadow/redux-ensure-fsa-middleware",
+  "homepage": "https://github.com/meadow/redux-ensure-fsa",
   "dependencies": {
     "flux-standard-action": "^0.6.0"
   },
