@@ -6,7 +6,8 @@
   "scripts": {
     "build": "babel ./modules -d build",
     "release": "node scripts/release.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint modules --ext .js --ext .jsx"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,10 @@
     "flux-standard-action": "^0.6.0"
   },
   "devDependencies": {
+    "@meadow/eslint-config": "^1.1.0",
     "babel-cli": "^6.1.18",
-    "babel-preset-es2015": "^6.1.18"
+    "babel-eslint": "^4.1.6",
+    "babel-preset-es2015": "^6.1.18",
+    "eslint": "^1.10.3"
   }
 }
