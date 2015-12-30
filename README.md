@@ -21,3 +21,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore);
 ```
+
+- - - 
+
+[![ghit.me](https://ghit.me/badge.svg?repo=meadow/redux-ensure-fsa)](https://ghit.me/repo/meadow/redux-ensure-fsa)
