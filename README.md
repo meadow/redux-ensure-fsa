@@ -16,7 +16,13 @@ import thunkMiddleware from 'redux-thunk';
 let middleware = [thunkMiddleware];
 
 if (process.env.NODE_ENV !== 'production') {
-  middleware = [...middleware, ensureFSAMiddleware];
+  const fsaMiddleware = ensureFSAMiddleware({
+    ignore: function (action) {
+      return false;
+    }
+  })
+
+  middleware = [...middleware, fsaMiddleware];
 }
 
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore);
