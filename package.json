@@ -1,6 +1,6 @@
 {
   "name": "@meadow/redux-ensure-fsa",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Redux middleware to check for flux standard actions",
   "main": "build/middleware.js",
   "scripts": {
